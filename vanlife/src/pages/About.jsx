@@ -1,6 +1,6 @@
-import React from 'react'
-import bgImg from "../assets/images/about-hero.png"
-import { Link } from "react-router-dom"
+import React from 'react';
+import bgImg from "../assets/about.png";
+import { Link } from "react-router-dom";
 
 
 function About() {
