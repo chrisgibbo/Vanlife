@@ -1,6 +1,7 @@
 import './App.css'
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Vans from "./pages/Vans"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Link className="site-logo" to="/">#VanLife</Link>
       <nav>
         <Link to="/about">About</Link>
+        <Link to="/Vans">Vans</Link>
       </nav>
     </header>
     <Routes>

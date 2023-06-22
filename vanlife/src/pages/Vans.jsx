@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom"
+
 
 function Vans() {
   return (
@@ -8,4 +10,4 @@ function Vans() {
   )
 }
 
-export default Vans
+export default Vans;
