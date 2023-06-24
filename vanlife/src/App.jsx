@@ -4,6 +4,8 @@ import About from "./pages/About"
 import Vans from "./pages/Vans"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
+import "../server"
+
 function App() {
   return (
     <BrowserRouter>
