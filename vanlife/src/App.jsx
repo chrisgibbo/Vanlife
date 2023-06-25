@@ -5,6 +5,9 @@ import About from "./pages/About"
 import Vans from "./pages/Vans/Vans"
 import VanDetail from "./pages/Vans/VanDetails"
 import Layout from './components/Layout'
+import Host from './pages/Host/Host'
+import Income from './pages/Host/Income'
+import Reviews from './pages/Host/Reviews'
 
 import "../server"
 
@@ -17,6 +20,9 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/vans" element={<Vans/>} />
         <Route path="/vans/:id" element={<VanDetail />} />
+        <Route path="/host" element={<Host />} />
+        <Route path="/income" element={<Income />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Route>
     </Routes>
   </BrowserRouter>
