@@ -2,7 +2,7 @@ import React from 'react'
 
 function HostVans() {
   return (
-    <div>Host Vans list page</div>
+    <h1>Host Vans list page</h1>
   )
 }
 
