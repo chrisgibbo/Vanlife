@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, NavLink } from 'react-router-dom'
 
 function HostLayout() {
     const currentActiveStyle = {
@@ -11,9 +11,15 @@ function HostLayout() {
   return (
     <>
         <nav className="host-nav">
-            <Link to="/host">Dashboard</Link>
-            <Link to="/host/income">Income</Link>
-            <Link to="/host/reviews">Reviews</Link>
+            <NavLink to="/host"
+            style={({isActive}) => isActive ? currentActiveStyle :null}
+            >Dashboard</NavLink>
+            <NavLink to="/host/income"
+            style={({isActive}) => isActive ? currentActiveStyle :null}
+            >Income</NavLink>
+            <NavLink to="/host/reviews"
+            style={({isActive}) => isActive ? currentActiveStyle :null}
+            >Reviews</NavLink>
         </nav>
         <Outlet/>
     </>
