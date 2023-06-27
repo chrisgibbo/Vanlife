@@ -11,6 +11,7 @@ import Reviews from './pages/Host/Reviews'
 import HostLayout from './components/HostLayout'
 
 import "../server"
+import Footer from './components/Footer'
 
 function App() {
   return (
