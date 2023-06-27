@@ -2,6 +2,12 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 function HostLayout() {
+    const currentActiveStyle = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "#161616"
+    }
+
   return (
     <>
         <nav className="host-nav">
