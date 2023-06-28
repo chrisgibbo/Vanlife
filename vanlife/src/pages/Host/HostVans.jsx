@@ -27,20 +27,6 @@ function HostVans() {
     </Link>
   ))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <section>
       <h1 className='host-vans-title'>Yourlisted vans</h1>
