@@ -2,7 +2,7 @@ import React from 'react'
 
 function HostVanPhotos() {
   return (
-    <div>Host van photos here</div>
+    <h2>Host van photos here</h2>
   )
 }
 

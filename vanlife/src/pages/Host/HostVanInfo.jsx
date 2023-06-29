@@ -2,7 +2,7 @@ import React from 'react'
 
 function HostVanInfo() {
   return (
-    <div>Host van info goes here</div>
+    <h2>Host van info goes here</h2>
   )
 }
 

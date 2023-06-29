@@ -2,7 +2,7 @@ import React from 'react'
 
 function HostVanPricing() {
   return (
-    <div>Host van pricing here</div>
+    <h2>Host van pricing here</h2>
   )
 }
 
