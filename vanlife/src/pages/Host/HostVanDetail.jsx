@@ -5,6 +5,14 @@ function HostVanDetail() {
   const { id } = useParams()
   const [currentVan, setCurrentVan] = React.useState(null)
 
+
+  const activeStyles = {
+    fontWeight: "bold",
+    textDectoration: "underline",
+    color: "#161616"
+  }
+
+
   React.useEffect(() => {
       fetch(`/api/host/vans/${id}`)
         .then(res => res.json())
@@ -40,7 +48,7 @@ function HostVanDetail() {
 
 
 
-        
+
         <Outlet/>
     </div>
 </section>
