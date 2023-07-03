@@ -74,7 +74,7 @@ function HostVanDetail() {
 
 
 
-                <Outlet/>
+                <Outlet context={[]} />
             </div>
 </section>
   )
