@@ -74,7 +74,7 @@ function HostVanDetail() {
 
 
 
-                <Outlet context={[]} />
+                <Outlet context={{ currentVan }} />
             </div>
 </section>
   )
