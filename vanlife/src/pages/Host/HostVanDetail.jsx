@@ -12,7 +12,6 @@ function HostVanDetail() {
     color: "#161616"
   }
 
-
   React.useEffect(() => {
       fetch(`/api/host/vans/${id}`)
         .then(res => res.json())
@@ -46,6 +45,32 @@ function HostVanDetail() {
             </div>
         </div>
 
+        <nav className="host-van-detail-van">
+          <NavLink
+            to="."
+            end
+            style={({isActive}) => isActive ? activeStyles : null}
+          >
+            Details
+          </NavLink>
+
+          <NavLink
+            to="pricing"
+            end
+            style={({isActive}) => isActive ? activeStyles : null}
+          >
+            Pricing
+          </NavLink>
+
+          <NavLink
+            to="photos"
+            end
+            style={({isActive}) => isActive ? activeStyles : null}
+          >
+            Photos
+          </NavLink>
+
+        </nav>
 
 
 
