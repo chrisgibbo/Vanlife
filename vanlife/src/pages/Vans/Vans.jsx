@@ -49,7 +49,7 @@ function Vans() {
                 <Link 
                     to="."
                     className="van-type simple"
-                >Clear</Link>            
+                >Clear Filters</Link>            
             </div>
             <div className="van-list">
                 {vanElements}
