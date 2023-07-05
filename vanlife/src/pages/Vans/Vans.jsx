@@ -42,6 +42,10 @@ function Vans() {
                     to="?type=luxury"
                     className="van-type luxury"
                 >Luxury</Link>
+                <Link 
+                    to="?type=rugged"
+                    className="van-type simple"
+                >Rugged</Link>
 
             
             </div>
