@@ -46,7 +46,10 @@ function Vans() {
                     to="?type=rugged"
                     className="van-type simple"
                 >Rugged</Link>
-
+                <Link 
+                    to="."
+                    className="van-type simple"
+                >Clear</Link>
             
             </div>
             <div className="van-list">
