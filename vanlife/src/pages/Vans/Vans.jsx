@@ -49,10 +49,13 @@ function Vans() {
                     className="van-type rugged"
                 >Rugged</button>
 
-                <button 
-                onClick={() => setSearchParams({})}
-                    className="van-type clear-filters"
-                >Clear Filters</button>    
+                {typeFilter ? (
+                    <button 
+                    onClick={() => setSearchParams({})}
+                        className="van-type clear-filters"
+                    >Clear Filters</button>    
+                ) :null } 
+
                         
             </div>
             <div className="van-list">
