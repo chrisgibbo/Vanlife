@@ -44,11 +44,11 @@ function Vans() {
                 >Luxury</Link>
                 <Link 
                     to="?type=rugged"
-                    className="van-type simple"
+                    className="van-type rugged"
                 >Rugged</Link>
                 <Link 
                     to="."
-                    className="van-type simple"
+                    className="van-type clear-filters"
                 >Clear Filters</Link>            
             </div>
             <div className="van-list">
