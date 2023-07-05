@@ -34,6 +34,7 @@ function Vans() {
         <div className="van-list-container">
             <h1>Explore our van options</h1>
             <div className="van-list-filter-buttons">
+                
                 <button 
                 onClick={() => setSearchParams({type: "simple"})}
                     className="van-type simple"
