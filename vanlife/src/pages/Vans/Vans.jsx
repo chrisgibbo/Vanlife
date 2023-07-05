@@ -33,8 +33,11 @@ function Vans() {
     return (
         <div className="van-list-container">
         <h1>Explore our van options</h1>
-        <div className="van-list">
-            {vanElements}
+        <div className="van-list-filter-buttons">
+            <Link 
+            to="?type=simple"
+            className="van-type-simple"
+            >Simple</Link>
         </div>
     </div>
   )
