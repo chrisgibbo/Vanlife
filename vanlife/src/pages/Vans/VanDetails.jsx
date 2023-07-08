@@ -12,6 +12,7 @@ function VanDetail() {
             .then(data => setVan(data.vans))
 }, [params.id]) 
 
+    const search = location.state?.search || ""
 
     return (
         <div className="van-detail-container">
