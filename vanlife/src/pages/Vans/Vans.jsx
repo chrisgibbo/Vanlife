@@ -20,8 +20,9 @@ function Vans() {
                 console.log("there was an erro!")
                 console.log(err)
                 setError(err)
+            } finally {
+                setLoading(false)
             }
-            setLoading(false)
         }
         loadVans()
     }, [])
