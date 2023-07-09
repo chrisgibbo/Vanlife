@@ -11,8 +11,10 @@ function Vans() {
 
     React.useEffect(() => {
         async function loadVans(){
+            setLoading(true)
             const data = await getVans()
             setVans(data)
+            setLoading(false)
         }
         loadVans()
     }, [])
