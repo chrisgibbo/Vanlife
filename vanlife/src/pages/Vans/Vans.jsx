@@ -9,9 +9,11 @@ function Vans() {
     const typeFilter = searchParams.get("type")
 
     React.useEffect(() => {
-        fetch("/api/vans")
-            .then(res => res.json())
-            .then(data => setVans(data.vans))
+        async function loadVans(){
+            const data = await getVans()
+            setVans(data)
+        }
+        loadVans()
     }, [])
 
     const displayedVans = typeFilter
