@@ -1,4 +1,5 @@
 import React from 'react'
+import getVans from "../api"
 import { Link, useSearchParams } from 'react-router-dom'
 
 function Vans() {
