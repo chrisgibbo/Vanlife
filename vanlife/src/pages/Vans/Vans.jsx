@@ -5,6 +5,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 function Vans() {
     const [searchParams, setSearchParams] = useSearchParams()
     const [vans, setVans] = React.useState([])
+    const [loading, setLoading] = React.useState(false)
 
     const typeFilter = searchParams.get("type")
 
@@ -47,6 +48,10 @@ function Vans() {
             }
             return prevParams
         })
+    }
+
+    if(loading) {
+        return <h1>Loading ...</h1>
     }
 
     return (
