@@ -12,8 +12,13 @@ function Vans() {
     React.useEffect(() => {
         async function loadVans(){
             setLoading(true)
-            const data = await getVans()
-            setVans(data)
+            try {
+                const data = await getVans()
+                setVans(data)                
+            } catch(err){
+                console.log("there was an erro!")
+                console.log(err)
+            }
             setLoading(false)
         }
         loadVans()
