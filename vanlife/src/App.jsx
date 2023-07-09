@@ -23,10 +23,7 @@ import NotFound from './pages/NotFound'
 
 import "../server"
 
-function App() {
-  return (
-    <BrowserRouter>
-    <Routes>
+const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home/>} />
         <Route path="about" element={<About/>} />
@@ -46,8 +43,13 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />}/>
       </Route>
-    </Routes>
-  </BrowserRouter>
+
+  
+))
+
+function App() {
+  return (
+    <RouterProvider router={router} />
   )
 }
 
