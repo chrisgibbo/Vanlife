@@ -6,6 +6,7 @@ function Vans() {
     const [searchParams, setSearchParams] = useSearchParams()
     const [vans, setVans] = React.useState([])
     const [loading, setLoading] = React.useState(false)
+    const [error, setError] = React.useState(null)
 
     const typeFilter = searchParams.get("type")
 
@@ -18,6 +19,7 @@ function Vans() {
             } catch(err){
                 console.log("there was an erro!")
                 console.log(err)
+                setError(err)
             }
             setLoading(false)
         }
