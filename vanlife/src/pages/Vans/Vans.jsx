@@ -11,6 +11,7 @@ function Vans() {
     const [vans, setVans] = React.useState([])
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState(null)
+    const data = useLoaderData()
 
     const typeFilter = searchParams.get("type")
 
