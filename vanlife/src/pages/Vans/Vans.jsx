@@ -1,6 +1,6 @@
 import React from 'react'
 import getVans from "../api"
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams, useLoaderData } from 'react-router-dom'
 
 export function loader () {
     return "Vans data goes here"
