@@ -3,7 +3,7 @@ import getVans from "../api"
 import { Link, useSearchParams, useLoaderData } from 'react-router-dom'
 
 export function loader () {
-    return "Vans data goes here"
+    return getVans()
 }
 
 function Vans() {
