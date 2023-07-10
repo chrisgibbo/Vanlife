@@ -14,23 +14,6 @@ function Vans() {
 
     const typeFilter = searchParams.get("type")
 
-    // React.useEffect(() => {
-    //     async function loadVans(){
-    //         setLoading(true)
-    //         try {
-    //             const data = await getVans()
-    //             setVans(data)                
-    //         } catch(err){
-    //             console.log("there was an erro!")
-    //             console.log(err)
-    //             setError(err)
-    //         } finally {
-    //             setLoading(false)
-    //         }
-    //     }
-    //     loadVans()
-    // }, [])
-
     const displayedVans = typeFilter
         ? vans.filter(van => van.type === typeFilter)
         : vans
