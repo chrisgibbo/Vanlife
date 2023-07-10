@@ -56,6 +56,8 @@ function App() {
 
 export default App;
 
+// Quiz 1 - 
+
 // 1. What is the primary reason to use a nested route?
 // Whenever we have some shared UI between routes in our app.
 
@@ -77,4 +79,25 @@ export default App;
 // of the parent route matches. It gives us a chance to render
 // an element inside the parent's <Outlet /> at the same path
 // as the parent route.
+
+// Quiz 2 - 
   
+// 1. When does the code in a loader function run?
+//   as soon as the page refreshes
+
+
+// 2. What are some benefits of using a data loader function
+//    instead of fetching our data in a useEffect in a component?
+//    Less code, data loads quicker upon loading the page
+   
+   
+// 3. What change do we need to make to our BrowserRouter before
+//    we can use loaders (or any of the new data-layer API features)
+//    in our app?
+//    adding createBrowserRouter to the import?
+   
+   
+   
+// 4. What are the steps we need to take in order to use
+//    a loader on any given route?
+//    import userLoader, add a loader function, then add the loader loader to teh Route
